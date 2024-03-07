@@ -2,3 +2,80 @@
   background: #222;
   color: #ccc;
 }
+
+body {
+	background: #111 !important;
+	color: #ccc;
+}
+.btn {
+	background: #333;
+	color: #ccc;
+	text-shadow: 0 1px 1px #000;
+	border-color: rgba(255, 255, 255, .1) rgba(255, 255, 255, .1) rgba(255, 255, 255, .25);
+	&:hover {
+		background: #333;
+		color: #ccc;
+		filter: contrast(0.5);
+	}
+}
+
+#content_wrapper {
+	background: #222 !important;
+	& .reviews {
+		color: #34a8e3;
+	}
+}
+#zmenu .dropdown > a, #content_wrapper_inner .topnav a {
+	color: #a3cc00
+}
+a:link {
+	color: #00b06c;
+}
+a:visited {
+	color: #c13a4f;
+}
+#zmenu {
+	& input {
+		background: #222;
+		color: #aaa;
+		border-color: rgba(255, 255, 255, .25);
+		z-index: 2;
+	}
+}
+.panel_normal {
+	background: #444;
+	color: #bbb;
+}
+ul.topnav ul li a:hover, ul.topnav ul li.active {
+	background: #555;
+}
+.gray {
+	color: #999;
+}
+.table-striped tbody > tr:nth-child(2n+1) > :is(td, th) {
+	background: #333;
+}
+.tcat {
+	background: #111;
+}
+.lc {
+	background: none;
+}
+.zmenu {
+	background: #333 !important;
+}
+
+.z-list:nth-of-type(odd) {
+    background: #333;
+}
+.z-list:hover {
+    filter: brightness(2);
+	transition: filter .1s ease-out;
+}
+.cimage {
+	height: 100%;
+}
+
+.z-indent {
+	margin-left: 38px;
+}
