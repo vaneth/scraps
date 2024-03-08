@@ -15,14 +15,25 @@ body {
 	&:hover {
 		background: #333;
 		color: #ccc;
-		filter: contrast(0.5);
+		filter: contrast(0.8);
 	}
 }
-
+.modal {
+	background: #111;
+}
+.modal-footer {
+	background: #222;
+	border-top-color: #ccc;
+	box-shadow: inset 0 1px 0 #9f9f9f;
+}
 #content_wrapper {
 	background: #222 !important;
 	& .reviews {
 		color: #34a8e3;
+	}
+	& select {
+		background: #333;
+		color: #aaa;
 	}
 }
 #zmenu .dropdown > a, #content_wrapper_inner .topnav a {
@@ -59,23 +70,24 @@ ul.topnav ul li a:hover, ul.topnav ul li.active {
 	background: #111;
 }
 .lc {
-	background: none;
+	background: #222;
+}
+.lc-left {
+	background: #222;
 }
 .zmenu {
 	background: #333 !important;
 }
-
+.z-list {
+	min-height: 115px !important;
+}
 .z-list:nth-of-type(odd) {
     background: #333;
 }
 .z-list:hover {
-    filter: brightness(2);
+    filter: brightness(1.3);
 	transition: filter .1s ease-out;
 }
-.cimage {
-	height: 100%;
-}
-
 .z-indent {
 	margin-left: 38px;
 }
