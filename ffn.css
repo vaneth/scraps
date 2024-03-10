@@ -3,17 +3,9 @@
 	color: #ccc;
 }
 body {
-	background: #111 !important;
+	background: #313131 url('https://www.fanfiction.net/static/textures/paper_2.png') !important;
+	background-blend-mode: color-burn;
 	color: #ccc;
-}
-@supports (background-image: -moz-element(#id)) {
-	:root {
-		background: #111 -moz-element(#storytext) center/cover no-repeat!important;
-	}
-	body {
-		background: transparent !important;
-		backdrop-filter: brightness(.6) blur(4px);
-	}
 }
 .btn {
 	background: #333;
