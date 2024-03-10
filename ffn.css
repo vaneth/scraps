@@ -1,11 +1,19 @@
 :root {
-  background: #222;
-  color: #ccc;
+	background: #222;
+	color: #ccc;
 }
-
 body {
 	background: #111 !important;
 	color: #ccc;
+}
+@supports (background-image: -moz-element(#id)) {
+	:root {
+		background: #111 -moz-element(#storytext) center/cover no-repeat!important;
+	}
+	body {
+		background: transparent !important;
+		backdrop-filter: brightness(.6) blur(4px);
+	}
 }
 .btn {
 	background: #333;
@@ -26,6 +34,9 @@ body {
 	border-top-color: #ccc;
 	box-shadow: inset 0 1px 0 #9f9f9f;
 }
+#storytext {
+	color: #bbb;
+}
 #content_wrapper {
 	background: #222 !important;
 	& .reviews {
@@ -34,7 +45,12 @@ body {
 	& select {
 		background: #333;
 		color: #aaa;
+		border-color: currentColor;
 	}
+}
+#content_wrapper_inner {
+	background-color: #333 !important;
+	background-blend-mode: color-burn;
 }
 #zmenu .dropdown > a, #content_wrapper_inner .topnav a {
 	color: #a3cc00
@@ -52,6 +68,11 @@ a:visited {
 		border-color: rgba(255, 255, 255, .25);
 		z-index: 2;
 	}
+}
+textarea {
+	background: #222;
+	color: #aaa;
+	border-color: rgba(255, 255, 255, .25);
 }
 .panel_normal {
 	background: #444;
