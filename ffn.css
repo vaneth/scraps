@@ -46,6 +46,17 @@ body {
 #storytext {
 	color: #bbb;
 }
+#_fontastic_reading_preview {
+	background-color: #303039 !important;
+	background-blend-mode: color-burn;
+}
+._texture {
+	display: inline-block !important;
+	background: #303039;
+	&> img {
+		mix-blend-mode: color-burn;
+	}
+}
 #content_wrapper {
 	background: #222 !important;
 	& .reviews {
